@@ -1,0 +1,22 @@
+#survey {
+    text-align: center;
+}
+
+#title {
+    text-align: center;
+}
+
+#space {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#submit {
+    text-align: center;
+    color: blue;
+}
+
+#loadinggif {
+    height: 190px;
+    width: 190px;
+}
