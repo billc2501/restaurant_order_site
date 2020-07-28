@@ -1,0 +1,27 @@
+{
+  "name": "restaurant_order_site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/billc2501/restaurant_order_site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/billc2501/restaurant_order_site/issues"
+  },
+  "homepage": "https://github.com/billc2501/restaurant_order_site#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "monk": "^7.3.0",
+    "morgan": "^1.10.0"
+  }
+}
