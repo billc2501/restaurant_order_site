@@ -19,5 +19,8 @@ survey.addEventListener('submit', function(event){
         headers: {
             'content-type': 'application/json'
           }
-        });
+        }).then(response => response.json()).then(receipt1 => console.log(receipt1));
+    loadinggif.style.display = 'none';
+    survey.style.display = '';
+    survey.reset();
 })
