@@ -13,5 +13,11 @@ survey.addEventListener('submit', function(event){
     }
     loadinggif.style.display = '';
     survey.style.display = 'none';
-    console.log(receipt);
+    const response = fetch(new URL('http:localhost:3000/'), {
+        method: 'POST',
+        body: JSON.stringify(receipt),
+        headers: {
+            'content-type': 'application/json'
+          }
+        });
 })
