@@ -2,6 +2,7 @@ const survey = document.querySelector('#survey');
 const loadinggif = document.querySelector('#loadinggif')
 loadinggif.style.display = 'none';
 
+const display = document.querySelector("#items");
 
 survey.addEventListener('submit', function(event){
     event.preventDefault();
@@ -19,7 +20,21 @@ survey.addEventListener('submit', function(event){
         headers: {
             'content-type': 'application/json'
           }
-        }).then(response => response.json()).then(receipt1 => console.log(receipt1));
+        }).then(response => response.json()).then(receipt1 => {
+            while (display.firstChild){
+                display.removeChild(display.firstChild);
+            }
+            receipt1.reverse().forEach(receipt => {
+                const div = document.createElement('div');
+                const header = document.createElement('h4');
+                const order = document.createElement('p');
+                header.textContent = receipt.name;
+                order.textContent = receipt.order;
+                div.appendChild(header);
+                div.appendChild(order);
+                display.appendChild(div);
+        }
+        )});
     loadinggif.style.display = 'none';
     survey.style.display = '';
     survey.reset();

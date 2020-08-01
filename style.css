@@ -26,5 +26,10 @@
     margin-left: auto;
     width: 25%;
     height: 25%;
+}
 
+#items {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
 }
