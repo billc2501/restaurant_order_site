@@ -1,1 +1,1 @@
-# restaurant_order_site
+Site with a dynamic and static server to address issues of database and instantaneous results
