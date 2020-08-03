@@ -1,1 +1,1 @@
-Site with a dynamic and static server to address issues of database and instantaneous results
+Ordering site with a dynamic and static server to address issues of database and instantaneous results
