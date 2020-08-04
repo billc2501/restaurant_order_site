@@ -1,1 +1,1 @@
-Ordering site with a dynamic and static server to address issues of database and instantaneous results
+This is an ordering site with a dynamic and static server to address issues of database and instantaneous results. It uses a collection from a MongoDB url-based database to store all the orders and shows the every single past order underneath the submit button after a user submits an order.
